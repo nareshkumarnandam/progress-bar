@@ -36,10 +36,10 @@
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: scaleX(-10);
   }
   to {
-    transform: rotate(360deg);
+    transform: scaleX(0);
   }
 }
 
@@ -55,7 +55,7 @@
   width: 0%;
   height: 30px;
   background-color: #90ee90;
-  transition: width .5s linear;
+  transition: width .2s linear;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,4 +64,7 @@
 span{
   position: fixed;
   left: 49%;
+}
+p{
+  animation: App-logo-spin 2s ease 1s infinite linear ease;
 }

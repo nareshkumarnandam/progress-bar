@@ -9,7 +9,7 @@ const ProgressBar = () => {
       setProgress((prevProgress) =>
         prevProgress === 100 ? prevProgress : prevProgress + 1
       );
-    }, 1000);
+    }, 300);
 
     return () => {
       clearInterval(timer);
