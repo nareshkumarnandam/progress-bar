@@ -20,9 +20,11 @@ const ProgressBar = () => {
     <div className="App">
       <h1>Progress Bar</h1>
       <div className="container">
-        <div className="progress-bar"  style={{ width: `${progress}%` }}><span>{progress}%</span></div>
+        <div className="progress-bar"  style={{ width: `${progress}%` }}><span style={{
+          color: progress > 49 ? "white" : "black"
+        }}>{progress}%</span></div>
       </div>
-      <p>{progress === 100 ? "Complete!" : "Loading..."}</p>
+      <p >{progress === 100 ? "Complete!" : "Loading..."}</p>
     </div>
   );
 };
